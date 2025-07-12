@@ -7,8 +7,7 @@
 [node name="level" type="Node"]
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("uid://bfg7m384eelft")
-spawn_path = NodePath("..")
+spawn_path = NodePath(".")
 script = ExtResource("1_u52ul")
 player = ExtResource("2_vonw3")
 
