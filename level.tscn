@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx3xek5i8b4n8"]
+
+[ext_resource type="Script" uid="uid://c3d87k2yvtdcn" path="res://multiplayer_spawner.gd" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://bfg7m384eelft" path="res://player.tscn" id="2_vonw3"]
+[ext_resource type="Texture2D" uid="uid://c2ont3qdwg1yx" path="res://icon.svg" id="3_oi3di"]
+
+[node name="level" type="Node"]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("uid://bfg7m384eelft")
+spawn_path = NodePath("..")
+script = ExtResource("1_u52ul")
+player = ExtResource("2_vonw3")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(520.5, 368)
+scale = Vector2(1.96094, 2.20312)
+texture = ExtResource("3_oi3di")
